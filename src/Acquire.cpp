@@ -13,7 +13,7 @@
 using namespace std;
 using namespace boost::filesystem;
 
-template<typename InType> void AcquireInput(ostream& Os, istream& Is, const string& Prompt, const string& FailString, InType& Result) {
+/*template<typename InType> void AcquireInput(ostream& Os, istream& Is, const string& Prompt, const string& FailString, InType& Result) {
 	do {
 		Os << Prompt.c_str();
 		if (Is.fail()) {
@@ -31,7 +31,7 @@ template<typename InType> InType AcquireInput(ostream& Os, istream& Is, const st
 	InType temp;
 	AcquireInput(Os,Is,Prompt,FailString,temp);
 	return temp;
-	}
+	}*/
 
 void AcquireDirectory(ostream& Os, istream& Is, const string& Prompt, const string& FailString, string& Result) {
 	bool validPath = false, satisfied = false;
